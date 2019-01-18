@@ -113,6 +113,14 @@
         <td>capitalizado:true</td>
         <td>{{nombre2 | capitalizado:true}}</td>
       </tr>
+      <tr>
+        <td>{{nombre}}</td>
+        <td>
+          contrasena: {{activar}}
+<button (click)="activar=!activar" type="button" class="btn btn-outline-primary btn-sm">Toggle</button>
+        </td>
+        <td>{{nombre | contrasena:activar}}</td>
+      </tr>
     </tbody>
   </table>
 
